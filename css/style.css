@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500&display=swap');
+
+body {
+   width: 100%;
+   padding: 0;
+   background-color: #fafafa;
+   overflow-x: hidden;
+   font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* ヘッダー部分記述 */
+header {
+   padding: 0;
+   position: fixed;
+   width: 100%;
+   left: 0;
+   top: 0;
+   margin: 0;
+   height: 75px;
+   background-color: #fafafa;
+   z-index: 200;
+}
+
+/* メニュー部分記述 */
+nav {
+   text-align: right;
+}
+
+nav ul {
+   margin-top: 25px;
+   margin-right: 20px;
+   height: 20px;
+   padding: 0;
+}
+
+nav ul a {
+   color: #222;
+   text-decoration: none;
+   display: inline-block;
+
+   border-left: solid 2px #222;
+   padding: 0 50px;
+}
+
+nav ul a:last-child {
+   padding-right: 50px;
+   border-right: solid 2px #222;
+}
+
+nav li {
+   list-style: none;
+}
+
+.headback {
+   background-color: transparent;
+}
+
+/* ヘッダー部ロゴ記述 */
+#logo {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 150px;
+   height: 150px;
+   background-color: #222;
+   z-index: 300;
+}
+
+#logo h1 {
+   color: #fafafa;
+   font-size: 30px;
+   line-height: 110px;
+}
+
+/*スクロールでヘッダーロゴの大きさ変更アニメーション記述 */
+/*小さくなるアニメーション */
+@keyframes small {
+   from {
+      width: 150px;
+      height: 150px;
+      font-size: 30px;
+      line-height: 110px;
+   }
+
+   to {
+      width: 75px;
+      height: 75px;
+      font-size: 15px;
+      line-height: 35px;
+   }
+}
+
+.small_logo {
+   animation: small .3s ease-in-out normal both;
+}
+
+.small_logo h1 {
+   animation: small .3s ease-in-out normal both;
+}
+
+/*大きくなるアニメーション */
+@keyframes large {
+   from {
+      width: 75px;
+      height: 75px;
+      font-size: 15px;
+      line-height: 35px;
+   }
+
+   to {
+      width: 150px;
+      height: 150px;
+      font-size: 30px;
+      line-height: 110px;
+   }
+}
+
+.large_logo {
+   animation: large .3s ease-in-out normal both;
+}
+
+.large_logo h1 {
+   animation: large .3s ease-in-out normal both;
+}
+
+
+/* ヘッダーロゴアニメーション記述終了 */
+/* ヘッダー記述終了 */
+
+.top {
+   margin-left: -8px;
+   margin-top: 75px;
+   height: 500px;
+   width: 100%;
+   line-height: 500px;
+   text-align: center;
+   background-color: #bfdeea;
+}
+
+main {
+   width: 100%;
+   margin-left: -8px;
+}
+
+.uebxli {
+   padding: 10px;
+}
+
+.box {
+   text-align: center;
+   line-height: 800px;
+   height: 800px;
+   border-bottom: solid 1px #222;
+}
+
+.test1 {
+   background-color: #fe4a49;
+}
+
+.test1 {
+   background-color: #fe4a49;
+}
+
+.test1 {
+   background-color: #fe4a49;
+}
+
+.test1 {
+   background-color: #fe4a49;
+}
