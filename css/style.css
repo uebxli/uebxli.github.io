@@ -74,6 +74,7 @@ nav ul a:last-child {
    height: 150px;
    background-color: #222;
    z-index: 300;
+   cursor: pointer;
 }
 
 #logo h1 {
@@ -150,7 +151,8 @@ nav ul a:last-child {
    width: 100%;
    line-height: 500px;
    text-align: center;
-   background-color: #bfdeea;
+   background: #bfdeea url(../img/top.png) no-repeat center center scroll;
+   background-size: cover;
 }
 
 main {
