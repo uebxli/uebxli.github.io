@@ -8,7 +8,9 @@ body {
    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
+
 /* ヘッダー部分記述 */
+
 header {
    padding: 0;
    position: fixed;
@@ -21,7 +23,9 @@ header {
    z-index: 200;
 }
 
+
 /* メニュー部分記述 */
+
 nav {
    text-align: right;
 }
@@ -36,8 +40,21 @@ nav ul {
 nav ul a {
    color: #222;
    text-decoration: none;
-   display: inline-block;
+}
 
+nav li {
+   display: inline-block;
+   list-style: none;
+   border-left: solid 2px #222;
+   padding: 0 50px;
+}
+
+nav ul li:last-child {
+   padding-right: 50px;
+   border-right: solid 2px #222;
+   color: #222;
+   text-decoration: none;
+   display: inline-block;
    border-left: solid 2px #222;
    padding: 0 50px;
 }
@@ -55,7 +72,9 @@ nav li {
    background-color: transparent;
 }
 
+
 /* ヘッダー部ロゴ記述 */
+
 #logo {
    position: fixed;
    top: 0;
@@ -72,7 +91,10 @@ nav li {
    line-height: 110px;
 }
 
+
 /*スクロールでヘッダーロゴの大きさ変更アニメーション記述 */
+
+
 /*小さくなるアニメーション */
 @keyframes small {
    from {
@@ -86,7 +108,7 @@ nav li {
       width: 75px;
       height: 75px;
       font-size: 15px;
-      line-height: 35px;
+      line-height: 55px;
    }
 }
 
@@ -98,7 +120,9 @@ nav li {
    animation: small .3s ease-in-out normal both;
 }
 
+
 /*大きくなるアニメーション */
+
 @keyframes large {
    from {
       width: 75px;
@@ -125,6 +149,8 @@ nav li {
 
 
 /* ヘッダーロゴアニメーション記述終了 */
+
+
 /* ヘッダー記述終了 */
 
 .top {
@@ -150,7 +176,6 @@ main {
 
 .box {
    text-align: center;
-   line-height: 800px;
    height: 800px;
    border-bottom: solid 1px #222;
 }
@@ -169,4 +194,83 @@ main {
 
 .test1 {
    background-color: #fe4a49;
+}
+
+.test4 h2 {
+   line-height: 100px;
+   height: 100px;
+   margin: 50px 0px;
+}
+
+.mono_h3 {
+   float: left;
+   width: 60%;
+   margin: 25px 0px;
+}
+
+.test4 td {
+   color: #FAFAFA;
+}
+
+.mono_table {
+   clear: both;
+   float: left;
+   width: 60%;
+   line-height: 100px;
+   height: 550px;
+   padding-top: 10px;
+   border-collapse: separate;
+   border-spacing: 10px 0px;
+   border-right: solid 1px #000000;
+}
+
+
+.mono_table_title_div {
+   height: 60px;
+   line-height: 60px;
+}
+
+.mono_table_text {
+   background-color: #06D6A0;
+   border-top-style: none;
+   margin-bottom: 25px;
+   border-bottom: solid 10px #FFFFFF;
+}
+
+.mono_table_title_sel {
+   margin-top: 25px;
+   background-color: #FFD275;
+}
+
+.coto_h3 {
+   margin-top: 0px;
+   margin-bottom: 25px;
+   padding-top: 25px;
+}
+
+.coto_table {
+   width: 40%;
+   line-height: 100px;
+   height: 550px;
+   padding-top: 10px;
+   border-collapse: separate;
+   border-spacing: 10px 0px;
+}
+
+.coto_table_title_div {
+   height: 60px;
+   line-height: 60px;
+}
+
+.coto_table_text {
+   background-color: #FE4A49;
+   border-top-style: none;
+   margin-bottom: 25px;
+   border-bottom: solid 10px #FFFFFF;
+}
+
+.coto_table_title_sel {
+   margin-top: 25px;
+   background-color: #BFDEEE;
+   clear: both;
 }
