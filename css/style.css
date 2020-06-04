@@ -279,6 +279,7 @@ main {
    line-height: 100px;
    height: 100px;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .mono_h3 {
@@ -313,7 +314,7 @@ main {
    background-color: #06D6A0;
    border-top-style: none;
    margin-bottom: 25px;
-   border-bottom: solid 10px #FFFFFF;
+   border-bottom: solid 10px #fe4a49;
 }
 
 .mono_table_title_sel {
@@ -344,8 +345,8 @@ main {
 .coto_table_text {
    background-color: #FE4A49;
    border-top-style: none;
-   margin-bottom: 25px;
-   border-bottom: solid 10px #FFFFFF;
+   margin-bottom: 5px;
+   border-bottom: solid 10px #fe4a49;
 }
 
 .coto_table_title_sel {
