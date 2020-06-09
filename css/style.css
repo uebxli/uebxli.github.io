@@ -10,7 +10,6 @@ body {
 
 
 /* ヘッダー部分記述 */
-
 header {
     padding: 0;
     position: fixed;
@@ -55,9 +54,6 @@ nav ul a {
     text-decoration: none;
 }
 
-nav ul a:last-child {}
-
-
 .headback {
     background-color: transparent;
 }
@@ -84,7 +80,6 @@ nav ul a:last-child {}
 
 
 /*スクロールでヘッダーロゴの大きさ変更アニメーション記述 */
-
 
 /*小さくなるアニメーション */
 @keyframes small {
@@ -137,10 +132,7 @@ nav ul a:last-child {}
     animation: large .3s ease-in-out normal both;
 }
 
-
 /* ヘッダーロゴアニメーション記述終了 */
-
-
 /* ヘッダー記述終了 */
 
 .top {
@@ -186,35 +178,52 @@ main {
 }
 
 
-.box {
-    text-align: center;
-    height: 800px;
-    border-bottom: solid 1px #222;
+#plo {
+   text-align: center;
+   height: 950px;
 }
 
-
-.test1 {
-    background-color: #fe4a49;
+.one {
+   position: fixed;
+   background-color: #fe4a49;
+   height: 100%;
+   z-index: 100;
+   width: 100%;
 }
 
-.test2 {
-    background-color: #bfdeea;
+.two {
+   position: fixed;
+   z-index: 200;
+   background-color: #bfdeea;
+   height: 100%;
+   right: 0;
+   width: 100%;
 }
 
-.test3 {
-    background-color: #06d6a0;
+.three {
+   position: fixed;
+   background-color: #06d6a0;
+   height: 100%;
+   right: 0;
+   width: 100%;
+   z-index: 300;
 }
 
-.test4 {
-    background-color: #ffd275;
+.four {
+   position: fixed;
+   background-color: #ffd275;
+   height: 100%;
+   right: 0;
+   width: 100%;
+   z-index: 400;
 }
 
 .need {
-    background-color: #fe4a49;
-    text-align: center;
-    height: 800px;
-    border-bottom: solid 1px #222;
-}p
+   background-color: #fe4a49;
+   text-align: center;
+   height: 800px;
+   border-bottom: solid 1px #222;
+}
 
 .need h2 {
     line-height: 100px;
@@ -373,16 +382,4 @@ main {
     margin-top: 25px;
     background-color: #BFDEEE;
     clear: both;
-}
-
-#plo {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.box {
-    height: 100%;
-    width: 100%;
-    position: absolute;
 }
