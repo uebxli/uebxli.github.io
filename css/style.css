@@ -160,10 +160,26 @@ main {
 }
 
 .uebxli {
-    padding: 10px 150px;
     color: saddlebrown;
     text-align: center;
+    font-size: 180%;
+    margin-top: 50px;
+    margin: 150px 0px;
+    
 }
+.item img{
+    /* height: 100%; */
+    width: 100%;
+    object-fit: cover;
+}
+.setumei {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    margin-bottom: 50px;
+    margin: 0px 75px;
+}
+
 
 .box {
     text-align: center;
@@ -193,7 +209,7 @@ main {
     text-align: center;
     height: 800px;
     border-bottom: solid 1px #222;
-}
+}p
 
 .need h2 {
     line-height: 100px;
