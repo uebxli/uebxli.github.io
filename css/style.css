@@ -250,7 +250,7 @@ main {
     padding-top: 10px;
     border-collapse: separate;
     border-spacing: 10px 0px;
-    border-right: solid 1px #000000;
+    border-right: solid 1px #222222;
 }
 
 
@@ -330,7 +330,7 @@ main {
     padding-top: 10px;
     border-collapse: separate;
     border-spacing: 10px 0px;
-    border-right: solid 1px #000000;
+    border-right: solid 1px #222222;
 }
 
 
@@ -340,7 +340,7 @@ main {
 }
 
 .mono_table_text {
-    background-color: #06D6A0;
+    background-color: #FFD275;
     border-top-style: none;
     margin-bottom: 25px;
     border-bottom: solid 10px #fe4a49;
@@ -348,7 +348,7 @@ main {
 
 .mono_table_title_sel {
     margin-top: 25px;
-    background-color: #FFD275;
+    background-color: #FAFAFA;
 }
 
 .coto_h3 {
@@ -372,10 +372,10 @@ main {
 }
 
 .coto_table_text {
-    background-color: #FE4A49;
+    background-color: #06D6A0;
     border-top-style: none;
     margin-bottom: 5px;
-    border-bottom: solid 10px #fe4a49;
+    border-bottom: solid 10px #FE4A49;
 }
 
 .coto_table_title_sel {
