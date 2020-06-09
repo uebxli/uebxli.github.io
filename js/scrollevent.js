@@ -35,11 +35,15 @@ let plo = document.getElementById('plo');
 let ploY = plo.getBoundingClientRect().top;
 console.log('ploY:' + ploY);
 
+let need = document.getElementById('need');
+let needY = need.getBoundingClientRect().top;
+console.log('needY:' + needY);
+
 let headScroll = (elem, elemY) => {
    elem.addEventListener('click', (e) => {
       e.preventDefault();
       window.scroll({
-         top: elemY - 70,
+         top: elemY,
          behavior: 'smooth'
       });
    });
@@ -47,6 +51,7 @@ let headScroll = (elem, elemY) => {
 
 headScroll(navOne, uebxliY);
 headScroll(navTwo, ploY);
+headScroll(navThr, needY);
 
 logo.addEventListener('click', (e) => {
    e.preventDefault();
