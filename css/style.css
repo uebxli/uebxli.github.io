@@ -185,44 +185,28 @@ main {
     margin: 15px 75px 0px 75px;
 }
 
-#plo {
-   text-align: center;
-   height: 950px;
+
+.box {
+    text-align: center;
+    height: 800px;
+    border-bottom: solid 1px #222;
 }
 
-.one {
-   position: fixed;
-   background-color: #fe4a49;
-   height: 100%;
-   z-index: 100;
-   width: 100%;
+
+.test1 {
+    background-color: #fe4a49;
 }
 
-.two {
-   position: fixed;
-   z-index: 200;
-   background-color: #bfdeea;
-   height: 100%;
-   right: 0;
-   width: 100%;
+.test2 {
+    background-color: #bfdeea;
 }
 
-.three {
-   position: fixed;
-   background-color: #06d6a0;
-   height: 100%;
-   right: 0;
-   width: 100%;
-   z-index: 300;
+.test3 {
+    background-color: #06d6a0;
 }
 
-.four {
-   position: fixed;
-   background-color: #ffd275;
-   height: 100%;
-   right: 0;
-   width: 100%;
-   z-index: 400;
+.test4 {
+    background-color: #ffd275;
 }
 
 .need {
