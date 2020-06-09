@@ -185,28 +185,44 @@ main {
     margin: 15px 75px 0px 75px;
 }
 
-
-.box {
-    text-align: center;
-    height: 800px;
-    border-bottom: solid 1px #222;
+#plo {
+   text-align: center;
+   height: 950px;
 }
 
-
-.test1 {
-    background-color: #fe4a49;
+.one {
+   position: fixed;
+   background-color: #fe4a49;
+   height: 100%;
+   z-index: 100;
+   width: 100%;
 }
 
-.test2 {
-    background-color: #bfdeea;
+.two {
+   position: fixed;
+   z-index: 200;
+   background-color: #bfdeea;
+   height: 100%;
+   right: 0;
+   width: 100%;
 }
 
-.test3 {
-    background-color: #06d6a0;
+.three {
+   position: fixed;
+   background-color: #06d6a0;
+   height: 100%;
+   right: 0;
+   width: 100%;
+   z-index: 300;
 }
 
-.test4 {
-    background-color: #ffd275;
+.four {
+   position: fixed;
+   background-color: #ffd275;
+   height: 100%;
+   right: 0;
+   width: 100%;
+   z-index: 400;
 }
 
 .need {
