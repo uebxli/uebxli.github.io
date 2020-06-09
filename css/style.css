@@ -1,172 +1,367 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500&display=swap');
 
 body {
-   width: 100%;
-   padding: 0;
-   background-color: #fafafa;
-   overflow-x: hidden;
-   font-family: 'M PLUS Rounded 1c', sans-serif;
+    width: 100%;
+    padding: 0;
+    background-color: #fafafa;
+    overflow-x: hidden;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
+
 /* ヘッダー部分記述 */
+
 header {
-   padding: 0;
-   position: fixed;
-   width: 100%;
-   left: 0;
-   top: 0;
-   margin: 0;
-   height: 75px;
-   background-color: #fafafa;
-   z-index: 200;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    height: 75px;
+    background-color: #fafafa;
+    z-index: 200;
 }
 
 /* メニュー部分記述 */
 nav {
-   text-align: right;
+    text-align: right;
 }
 
 nav ul {
-   margin-top: 25px;
-   margin-right: 20px;
-   height: 20px;
-   padding: 0;
-}
-
-nav ul a {
-   color: #222;
-   text-decoration: none;
-   display: inline-block;
-
-   border-left: solid 2px #222;
-   padding: 0 50px;
-}
-
-nav ul a:last-child {
-   padding-right: 50px;
-   border-right: solid 2px #222;
+    margin-top: 25px;
+    margin-right: 20px;
+    height: 20px;
+    padding: 0;
 }
 
 nav li {
-   list-style: none;
+    display: inline-block;
+    list-style: none;
+    border-left: solid 2px #222;
+    padding: 0 50px;
 }
+
+nav ul li:last-child {
+    padding-right: 50px;
+    border-right: solid 2px #222;
+    text-decoration: none;
+    display: inline-block;
+    border-left: solid 2px #222;
+}
+
+nav ul a {
+    color: #222;
+    text-decoration: none;
+}
+
+nav ul a:last-child {}
+
 
 .headback {
-   background-color: transparent;
+    background-color: transparent;
 }
 
+
 /* ヘッダー部ロゴ記述 */
+
 #logo {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 150px;
-   height: 150px;
-   background-color: #222;
-   z-index: 300;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background-color: #222;
+    z-index: 300;
+    cursor: pointer;
 }
 
 #logo h1 {
-   color: #fafafa;
-   font-size: 30px;
-   line-height: 110px;
+    color: #fafafa;
+    font-size: 30px;
+    line-height: 110px;
 }
 
+
 /*スクロールでヘッダーロゴの大きさ変更アニメーション記述 */
+
+
 /*小さくなるアニメーション */
 @keyframes small {
-   from {
-      width: 150px;
-      height: 150px;
-      font-size: 30px;
-      line-height: 110px;
-   }
+    from {
+        width: 150px;
+        height: 150px;
+        font-size: 30px;
+        line-height: 110px;
+    }
 
-   to {
-      width: 75px;
-      height: 75px;
-      font-size: 15px;
-      line-height: 35px;
-   }
+    to {
+        width: 75px;
+        height: 75px;
+        font-size: 15px;
+        line-height: 55px;
+    }
 }
 
 .small_logo {
-   animation: small .3s ease-in-out normal both;
+    animation: small .3s ease-in-out normal both;
 }
 
 .small_logo h1 {
-   animation: small .3s ease-in-out normal both;
+    animation: small .3s ease-in-out normal both;
 }
+
 
 /*大きくなるアニメーション */
 @keyframes large {
-   from {
-      width: 75px;
-      height: 75px;
-      font-size: 15px;
-      line-height: 35px;
-   }
+    from {
+        width: 75px;
+        height: 75px;
+        font-size: 15px;
+        line-height: 35px;
+    }
 
-   to {
-      width: 150px;
-      height: 150px;
-      font-size: 30px;
-      line-height: 110px;
-   }
+    to {
+        width: 150px;
+        height: 150px;
+        font-size: 30px;
+        line-height: 110px;
+    }
 }
 
 .large_logo {
-   animation: large .3s ease-in-out normal both;
+    animation: large .3s ease-in-out normal both;
 }
 
 .large_logo h1 {
-   animation: large .3s ease-in-out normal both;
+    animation: large .3s ease-in-out normal both;
 }
 
 
 /* ヘッダーロゴアニメーション記述終了 */
+
+
 /* ヘッダー記述終了 */
 
 .top {
-   margin-left: -8px;
-   margin-top: 75px;
-   height: 500px;
-   width: 100%;
-   line-height: 500px;
-   text-align: center;
-   background-color: #bfdeea;
+    margin-left: -8px;
+    margin-top: 75px;
+    height: 500px;
+    width: 100%;
+    line-height: 500px;
+    text-align: center;
+    background: #bfdeea url(../img/top.png) no-repeat center center scroll;
+    background-size: cover;
 }
 
 main {
-   width: 100%;
-   margin-left: -8px;
+    width: 100%;
+    margin-left: -8px;
 }
 
 .uebxli {
-   padding: 10px 150px;
-   color: saddlebrown;
-   text-align: center;
+    padding: 10px 150px;
+    color: saddlebrown;
+    text-align: center;
 }
 
 .box {
-   text-align: center;
-   line-height: 800px;
-   height: 800px;
-   border-bottom: solid 1px #222;
+    text-align: center;
+    height: 800px;
+    border-bottom: solid 1px #222;
 }
 
-.test1 {
-   background-color: #fe4a49;
-}
 
 .test1 {
-   background-color: #fe4a49;
+    background-color: #fe4a49;
 }
 
-.test1 {
-   background-color: #fe4a49;
+.test2 {
+    background-color: #bfdeea;
 }
 
-.test1 {
-   background-color: #fe4a49;
+.test3 {
+    background-color: #06d6a0;
+}
+
+.test4 {
+    background-color: #ffd275;
+}
+
+.need {
+    background-color: #fe4a49;
+    text-align: center;
+    height: 800px;
+    border-bottom: solid 1px #222;
+}
+
+.need h2 {
+    line-height: 100px;
+    height: 100px;
+    margin: 50px 0px;
+}
+
+.mono_h3 {
+    float: left;
+    width: 60%;
+    margin: 25px 0px;
+}
+
+.need td {
+    color: #FAFAFA;
+}
+
+.mono_table {
+    clear: both;
+    float: left;
+    width: 60%;
+    line-height: 100px;
+    height: 550px;
+    padding-top: 10px;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+    border-right: solid 1px #000000;
+}
+
+
+.mono_table_title_div {
+    height: 60px;
+    line-height: 60px;
+}
+
+.mono_table_text {
+    background-color: #06D6A0;
+    border-top-style: none;
+    margin-bottom: 25px;
+    border-bottom: solid 10px #FFFFFF;
+}
+
+.mono_table_title_sel {
+    margin-top: 25px;
+    background-color: #FFD275;
+}
+
+.coto_h3 {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+}
+
+.coto_table {
+    width: 40%;
+    line-height: 100px;
+    height: 550px;
+    padding-top: 10px;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+}
+
+.coto_table_title_div {
+    height: 60px;
+    line-height: 60px;
+}
+
+.coto_table_text {
+    background-color: #FE4A49;
+    border-top-style: none;
+    margin-bottom: 25px;
+    border-bottom: solid 10px #FFFFFF;
+}
+
+.coto_table_title_sel {
+    margin-top: 25px;
+    background-color: #BFDEEE;
+    clear: both;
+}
+
+.need h2 {
+    line-height: 100px;
+    height: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mono_h3 {
+    float: left;
+    width: 60%;
+    margin: 25px 0px;
+}
+
+.need td {
+    color: #FAFAFA;
+}
+
+.mono_table {
+    clear: both;
+    float: left;
+    width: 60%;
+    line-height: 100px;
+    height: 550px;
+    padding-top: 10px;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+    border-right: solid 1px #000000;
+}
+
+
+.mono_table_title_div {
+    height: 60px;
+    line-height: 60px;
+}
+
+.mono_table_text {
+    background-color: #06D6A0;
+    border-top-style: none;
+    margin-bottom: 25px;
+    border-bottom: solid 10px #fe4a49;
+}
+
+.mono_table_title_sel {
+    margin-top: 25px;
+    background-color: #FFD275;
+}
+
+.coto_h3 {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+}
+
+.coto_table {
+    width: 40%;
+    line-height: 100px;
+    height: 550px;
+    padding-top: 10px;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+}
+
+.coto_table_title_div {
+    height: 60px;
+    line-height: 60px;
+}
+
+.coto_table_text {
+    background-color: #FE4A49;
+    border-top-style: none;
+    margin-bottom: 5px;
+    border-bottom: solid 10px #fe4a49;
+}
+
+.coto_table_title_sel {
+    margin-top: 25px;
+    background-color: #BFDEEE;
+    clear: both;
+}
+
+#plo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
