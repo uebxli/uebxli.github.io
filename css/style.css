@@ -112,6 +112,7 @@ nav ul a {
    background-color: #fe4a49;
    border-radius: 60px;
    margin: 5px;
+   transition: all .5s ease-out 0s;
 }
 
 .hamburger_line {
