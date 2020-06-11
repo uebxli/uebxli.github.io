@@ -383,3 +383,13 @@ main {
     background-color: #BFDEEE;
     clear: both;
 }
+
+.mono td{
+  line-height: 25px;
+  font-size: 23px;
+}
+
+.coto td{
+  line-height: 25px;
+  font-size: 25px;
+}
