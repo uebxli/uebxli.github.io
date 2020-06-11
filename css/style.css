@@ -393,6 +393,11 @@ main {
     color: #FAFAFA;
 }
 
+.plo a:hover {
+    color: #222;
+    font-size: 1.2em;
+}
+
 .yuki {
     float: left;
 }
