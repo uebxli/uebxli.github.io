@@ -383,3 +383,54 @@ main {
     background-color: #BFDEEE;
     clear: both;
 }
+
+.plo {
+    color: #FAFAFA;
+}
+
+.yuki {
+    float: left;
+}
+
+.rina {
+    float: left;
+}
+
+.kero {
+    float: left;
+}
+
+.tsuki {
+    float: left;
+}
+
+.twitter {
+    width: 33%;
+    margin: 25% 0%;
+}
+
+.intro {
+    width: 33%;
+    margin: 9% 0%;
+}
+
+.list {
+    width: 33%;
+    margin: 9% 0%;
+}
+
+.study {
+    margin-bottom: 40%;
+}
+
+.study li {
+    margin: 10% 0px;
+}
+
+.future {
+    margin-top: 40%;
+}
+
+.future li {
+    margin: 10% 0px;
+}
