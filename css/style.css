@@ -1,83 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500&display=swap');
+
 body {
-  width: 100%;
-  padding: 0;
-  background-color: #fafafa;
-  overflow-x: hidden;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+    width: 100%;
+    padding: 0;
+    background-color: #fafafa;
+    overflow-x: hidden;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 
 /* ヘッダー部分記述 */
 
 header {
-  padding: 0;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  margin: 0;
-  height: 75px;
-  background-color: #fafafa;
-  z-index: 200;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    height: 75px;
+    background-color: #fafafa;
+    z-index: 200;
 }
 
 
 /* メニュー部分記述 */
 
 nav {
-  text-align: right;
+    text-align: right;
 }
 
 nav ul {
-  margin-top: 25px;
-  margin-right: 20px;
-  height: 20px;
-  padding: 0;
+    margin-top: 25px;
+    margin-right: 20px;
+    height: 20px;
+    padding: 0;
 }
 
 nav li {
-  display: inline-block;
-  list-style: none;
-  border-left: solid 2px #222;
-  padding: 0 50px;
+    display: inline-block;
+    list-style: none;
+    border-left: solid 2px #222;
+    padding: 0 50px;
 }
 
 nav ul li:last-child {
-  padding-right: 50px;
-  border-right: solid 2px #222;
-  text-decoration: none;
-  display: inline-block;
-  border-left: solid 2px #222;
+    padding-right: 50px;
+    border-right: solid 2px #222;
+    text-decoration: none;
+    display: inline-block;
+    border-left: solid 2px #222;
 }
 
 nav ul a {
-  color: #222;
-  text-decoration: none;
+    color: #222;
+    text-decoration: none;
 }
 
 .headback {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 
 /* ヘッダー部ロゴ記述 */
 
 #logo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 150px;
-  height: 150px;
-  background-color: #222;
-  z-index: 300;
-  cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background-color: #222;
+    z-index: 300;
+    cursor: pointer;
 }
 
 #logo h1 {
-  color: #fafafa;
-  font-size: 30px;
-  line-height: 110px;
+    color: #fafafa;
+    font-size: 30px;
+    line-height: 110px;
 }
 
 
@@ -87,52 +88,54 @@ nav ul a {
 /*小さくなるアニメーション */
 
 @keyframes small {
-  from {
-    width: 150px;
-    height: 150px;
-    font-size: 30px;
-    line-height: 110px;
-  }
-  to {
-    width: 75px;
-    height: 75px;
-    font-size: 15px;
-    line-height: 55px;
-  }
+    from {
+        width: 150px;
+        height: 150px;
+        font-size: 30px;
+        line-height: 110px;
+    }
+
+    to {
+        width: 75px;
+        height: 75px;
+        font-size: 15px;
+        line-height: 55px;
+    }
 }
 
 .small_logo {
-  animation: small .3s ease-in-out normal both;
+    animation: small .3s ease-in-out normal both;
 }
 
 .small_logo h1 {
-  animation: small .3s ease-in-out normal both;
+    animation: small .3s ease-in-out normal both;
 }
 
 
 /*大きくなるアニメーション */
 
 @keyframes large {
-  from {
-    width: 75px;
-    height: 75px;
-    font-size: 15px;
-    line-height: 35px;
-  }
-  to {
-    width: 150px;
-    height: 150px;
-    font-size: 30px;
-    line-height: 110px;
-  }
+    from {
+        width: 75px;
+        height: 75px;
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    to {
+        width: 150px;
+        height: 150px;
+        font-size: 30px;
+        line-height: 110px;
+    }
 }
 
 .large_logo {
-  animation: large .3s ease-in-out normal both;
+    animation: large .3s ease-in-out normal both;
 }
 
 .large_logo h1 {
-  animation: large .3s ease-in-out normal both;
+    animation: large .3s ease-in-out normal both;
 }
 
 
@@ -142,19 +145,19 @@ nav ul a {
 /* ヘッダー記述終了 */
 
 .top {
-  margin-left: -8px;
-  margin-top: 75px;
-  height: 500px;
-  width: 100%;
-  line-height: 500px;
-  text-align: center;
-  background: #bfdeea url(../img/top.png) no-repeat center center scroll;
-  background-size: cover;
+    margin-left: -8px;
+    margin-top: 75px;
+    height: 500px;
+    width: 100%;
+    line-height: 500px;
+    text-align: center;
+    background: #bfdeea url(../img/top.png) no-repeat center center scroll;
+    background-size: cover;
 }
 
 main {
-  width: 100%;
-  margin-left: -8px;
+    width: 100%;
+    margin-left: -8px;
 }
 
 .uebxli {
@@ -162,20 +165,20 @@ main {
     margin-bottom: 150px;
 }
 
-.what{
-    color:#fafafa;
+.what {
+    color: #fafafa;
     text-align: center;
     font-size: 3rem;
     margin: 0px;
-    background-color:#bfdeea;
+    background-color: #bfdeea;
     padding: 80px 0px 80px 0px;
     margin-bottom: 70px;
 }
 
 .item img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .setumei {
@@ -186,237 +189,237 @@ main {
 }
 
 #plo {
-  text-align: center;
-  height: 950px;
+    text-align: center;
+    height: 950px;
 }
 
 .one {
-  position: fixed;
-  background-color: #fe4a49;
-  height: 100%;
-  z-index: 100;
-  width: 100%;
+    position: fixed;
+    background-color: #fe4a49;
+    height: 100%;
+    z-index: 100;
+    width: 100%;
 }
 
 .two {
-  position: fixed;
-  z-index: 200;
-  background-color: #bfdeea;
-  height: 100%;
-  right: 0;
-  width: 100%;
+    position: fixed;
+    z-index: 200;
+    background-color: #bfdeea;
+    height: 100%;
+    right: 0;
+    width: 100%;
 }
 
 .three {
-  position: fixed;
-  background-color: #06d6a0;
-  height: 100%;
-  right: 0;
-  width: 100%;
-  z-index: 300;
+    position: fixed;
+    background-color: #06d6a0;
+    height: 100%;
+    right: 0;
+    width: 100%;
+    z-index: 300;
 }
 
 .four {
-  position: fixed;
-  background-color: #ffd275;
-  height: 100%;
-  right: 0;
-  width: 100%;
-  z-index: 400;
+    position: fixed;
+    background-color: #ffd275;
+    height: 100%;
+    right: 0;
+    width: 100%;
+    z-index: 400;
 }
 
 .need {
-  background-color: #fe4a49;
-  text-align: center;
-  height: 800px;
+    background-color: #fe4a49;
+    text-align: center;
+    height: 800px;
 }
 
 .need h2 {
-  line-height: 100px;
-  height: 100px;
-  margin: 50px 0px;
+    line-height: 100px;
+    height: 100px;
+    margin: 50px 0px;
 }
 
 .mono_h3 {
-  float: left;
-  width: 60%;
-  margin: 25px 0px;
+    float: left;
+    width: 60%;
+    margin: 25px 0px;
 }
 
 .need td {
-  color: #FAFAFA;
+    color: #FAFAFA;
 }
 
 .monocoto {
-  font-size: 3rem;
-  color: #FAFAFA;
+    font-size: 3rem;
+    color: #FAFAFA;
 }
 
 .mono_table {
-  clear: both;
-  float: left;
-  width: 60%;
-  line-height: 100px;
-  height: 550px;
-  padding-top: 10px;
-  border-collapse: separate;
-  border-spacing: 10px 0px;
-  border-right: solid 1px #222222;
+    clear: both;
+    float: left;
+    width: 60%;
+    line-height: 100px;
+    height: 550px;
+    padding-top: 10px;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+    border-right: solid 1px #222222;
 }
 
 .mono_table_title_div {
-  height: 60px;
-  line-height: 60px;
+    height: 60px;
+    line-height: 60px;
 }
 
 .mono_table_text {
-  background-color: #06D6A0;
-  border-top-style: none;
-  margin-bottom: 25px;
-  border-bottom: solid 10px #FFFFFF;
+    background-color: #06D6A0;
+    border-top-style: none;
+    margin-bottom: 25px;
+    border-bottom: solid 10px #FFFFFF;
 }
 
 .mono_table_title_sel {
-  margin-top: 25px;
-  background-color: #FFD275;
+    margin-top: 25px;
+    background-color: #FFD275;
 }
 
 .coto_h3 {
-  margin-top: 0px;
-  margin-bottom: 25px;
-  padding-top: 25px;
-  font-size: 40px;
-  color: #FAFAFA;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 40px;
+    color: #FAFAFA;
 }
 
 .coto_table {
-  width: 40%;
-  line-height: 100px;
-  height: 550px;
-  padding-top: 10px;
-  border-collapse: separate;
-  border-spacing: 10px 0px;
+    width: 40%;
+    line-height: 100px;
+    height: 550px;
+    padding-top: 10px;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
 }
 
 .coto_table_title_div {
-  height: 60px;
-  line-height: 60px;
+    height: 60px;
+    line-height: 60px;
 }
 
 .coto_table_text {
-  background-color: #FE4A49;
-  border-top-style: none;
-  margin-bottom: 25px;
-  border-bottom: solid 10px #FFFFFF;
+    background-color: #FE4A49;
+    border-top-style: none;
+    margin-bottom: 25px;
+    border-bottom: solid 10px #FFFFFF;
 }
 
 .coto_table_title_sel {
-  margin-top: 25px;
-  background-color: #BFDEEE;
-  clear: both;
+    margin-top: 25px;
+    background-color: #BFDEEE;
+    clear: both;
 }
 
 .need h2 {
-  line-height: 100px;
-  height: 100px;
-  margin-top: 0;
-  margin-bottom: 0;
+    line-height: 100px;
+    height: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .mono_h3 {
-  float: left;
-  width: 60%;
-  margin: 25px 0px;
-  font-size: 40px;
-  color: #FAFAFA;
+    float: left;
+    width: 60%;
+    margin: 25px 0px;
+    font-size: 40px;
+    color: #FAFAFA;
 }
 
 .need td {
-  color: #FAFAFA;
+    color: #FAFAFA;
 }
 
 .mono_table {
-  clear: both;
-  float: left;
-  width: 60%;
-  line-height: 100px;
-  height: 550px;
-  padding-top: 10px;
-  border-collapse: separate;
-  border-spacing: 10px 0px;
-  border-right: solid 2px #FAFAFA;
+    clear: both;
+    float: left;
+    width: 60%;
+    line-height: 100px;
+    height: 550px;
+    padding-top: 10px;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+    border-right: solid 2px #FAFAFA;
 }
 
 .mono_table_title_div {
-  height: 60px;
-  line-height: 60px;
+    height: 60px;
+    line-height: 60px;
 }
 
 .mono_table_text {
-  background-color: #FFD275;
-  border-top-style: none;
-  margin-bottom: 25px;
-  border-bottom: solid 10px #fe4a49;
+    background-color: #FFD275;
+    border-top-style: none;
+    margin-bottom: 25px;
+    border-bottom: solid 10px #fe4a49;
 }
 
 .mono_table_title_sel {
-  margin-top: 25px;
-  background-color: #FAFAFA;
+    margin-top: 25px;
+    background-color: #FAFAFA;
 }
 
 .coto_h3 {
-  margin-top: 0px;
-  margin-bottom: 25px;
-  padding-top: 25px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-top: 25px;
 }
 
 .coto_table {
-  width: 40%;
-  line-height: 100px;
-  height: 550px;
-  padding-top: 10px;
-  border-collapse: separate;
-  border-spacing: 10px 0px;
+    width: 40%;
+    line-height: 100px;
+    height: 550px;
+    padding-top: 10px;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
 }
 
 .coto_table_title_div {
-  height: 60px;
-  line-height: 60px;
+    height: 60px;
+    line-height: 60px;
 }
 
 .coto_table_text {
-  background-color: #06D6A0;
-  border-top-style: none;
-  margin-bottom: 5px;
-  border-bottom: solid 10px #FE4A49;
+    background-color: #06D6A0;
+    border-top-style: none;
+    margin-bottom: 5px;
+    border-bottom: solid 10px #FE4A49;
 }
 
 .coto_table_title_sel {
-  margin-top: 25px;
-  background-color: #BFDEEE;
-  clear: both;
+    margin-top: 25px;
+    background-color: #BFDEEE;
+    clear: both;
 }
 
 .mono td {
-  line-height: 25px;
-  font-size: 20px;
+    line-height: 25px;
+    font-size: 20px;
 }
 
 .mono th div {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 .coto td {
-  line-height: 25px;
-  font-size: 20px;
+    line-height: 25px;
+    font-size: 20px;
 }
 
 .coto th div {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 .plo {
-  color: #FAFAFA;
+    color: #FAFAFA;
 }
 
 .plo a {
@@ -430,34 +433,34 @@ main {
 }
 
 .yuki {
-  float: left;
+    float: left;
 }
 
 .rina {
-  float: left;
+    float: left;
 }
 
 .kero {
-  float: left;
+    float: left;
 }
 
 .tsuki {
-  float: left;
+    float: left;
 }
 
 .twitter {
-  width: 33%;
-  margin: 25% 0%;
+    width: 33%;
+    margin: 25% 0%;
 }
 
 .intro {
-  width: 33%;
-  margin: 9% 0%;
+    width: 33%;
+    margin: 9% 0%;
 }
 
 .list {
-  width: 33%;
-  margin: 9% 0%;
+    width: 33%;
+    margin: 9% 0%;
 }
 
 .study {
@@ -465,7 +468,7 @@ main {
 }
 
 .study li {
-  margin: 10% 0px;
+    margin: 10% 0px;
 }
 
 .future {
@@ -473,22 +476,22 @@ main {
 }
 
 .future li {
-  margin: 10% 0px;
+    margin: 10% 0px;
 }
 
 footer {
-  text-align: center;
-  background-color: #fefefe;
-  height: 50px;
-  width: 105%;
-  margin-left: -2%;
+    text-align: center;
+    background-color: #fefefe;
+    height: 50px;
+    width: 105%;
+    margin-left: -2%;
 }
 
 p {
-   font-weight: 300;
-   color: #222;
-   margin: 0;
-   line-height: 50px;
+    font-weight: 300;
+    color: #222;
+    margin: 0;
+    line-height: 50px;
 }
 
 /* 画面横幅768px~1068px */
@@ -497,29 +500,68 @@ p {
     /*Uebxli
     ---------------------------------------------*/
 
-   
+
 }
 
 /* 画面横幅320px~767px */
-@media only screen and (min-width: 320px) and (max-width: 767px){
-   /*Uebxli
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    /*Uebxli
    ---------------------------------------------------*/
 
-   .uebxli {
-    margin-top: 0px;
-    margin-bottom: 100px;
-}
-   .what{
-       font-size: 2rem;
-       padding: 60px 0px 60px 0px;
-       margin-bottom: 40px;
-   }
+    .uebxli {
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
 
-   .setumei{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    margin: 15px 75px 15px 75px;
-   }
+    .what {
+        font-size: 2rem;
+        padding: 60px 0px 60px 0px;
+        margin-bottom: 40px;
+    }
 
+    .setumei {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 15px 75px 15px 75px;
+    }
+
+
+
+    .twitter {
+        width: 50%;
+        margin-top: 30%;
+        margin-bottom: 5%;
+    }
+
+    .intro {
+        width: 50%;
+        margin-top: 10%;
+        margin-bottom: 0%;
+    }
+
+    .list {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .study {
+        float: left;
+        width: 50%;
+
+    }
+
+    .study li {
+        margin: 20% 0%;
+    }
+
+    .future {
+        float: left;
+        width: 50%;
+        margin-top: 0%;
+    }
+
+    .future li {
+        margin: 20% 0%;
+    }
 }
