@@ -493,10 +493,33 @@ p {
 
 /* 画面横幅768px~1068px */
 @media only screen and (min-width: 768px) and (max-width: 1068px) {
+
+    /*Uebxli
+    ---------------------------------------------*/
+
    
 }
 
 /* 画面横幅320px~767px */
 @media only screen and (min-width: 320px) and (max-width: 767px){
-   
+   /*Uebxli
+   ---------------------------------------------------*/
+
+   .uebxli {
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+   .what{
+       font-size: 2rem;
+       padding: 60px 0px 60px 0px;
+       margin-bottom: 40px;
+   }
+
+   .setumei{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 15px 75px 15px 75px;
+   }
+
 }
