@@ -43,7 +43,6 @@ let ploY = plo.getBoundingClientRect().top;
 
 let need = document.getElementById('need');
 let needY = need.getBoundingClientRect().top;
-console.log('needY:' + needY);
 
 let headScroll = (elem, elemY) => {
    elem.addEventListener('click', (e) => {
@@ -62,3 +61,17 @@ headScroll(hamOne, uebxliY);
 headScroll(hamTwo, ploY);
 headScroll(hamThr, needY);
 headScroll(logo, 0);
+
+function toggleNav() {
+   let body = document.body;
+   let hamburger = document.getElementById('js_hamburger');
+   let nav = document.getElementById('hamnav');
+
+   hamburger.addEventListener('click', function () {
+      body.classList.toggle('nav_open');
+   });
+   nav.addEventListener('click', function () {
+      body.classList.remove('nav_open');
+   });
+}
+toggleNav();
