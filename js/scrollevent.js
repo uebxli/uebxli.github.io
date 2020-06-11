@@ -26,14 +26,13 @@ window.onscroll = () => {
 let navOne = document.getElementById('one');
 let navTwo = document.getElementById('two');
 let navThr = document.getElementById('three');
+let pageTop = document.getElementById('pagetop');
 
 let uebxli = document.getElementById('uebxli');
 let uebxliY = uebxli.getBoundingClientRect().top;
-console.log('uebxliY:' + uebxliY);
 
 let plo = document.getElementById('plo');
 let ploY = plo.getBoundingClientRect().top;
-console.log('ploY:' + ploY);
 
 let need = document.getElementById('need');
 let needY = need.getBoundingClientRect().top;
@@ -52,11 +51,4 @@ let headScroll = (elem, elemY) => {
 headScroll(navOne, uebxliY);
 headScroll(navTwo, ploY);
 headScroll(navThr, needY);
-
-logo.addEventListener('click', (e) => {
-   e.preventDefault();
-   window.scroll({
-      top: 0,
-      behavior: 'smooth'
-   });
-});
+headScroll(logo, 0);
