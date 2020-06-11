@@ -222,7 +222,6 @@ main {
    background-color: #fe4a49;
    text-align: center;
    height: 800px;
-   border-bottom: solid 1px #222;
 }
 
 .need h2 {
@@ -433,4 +432,25 @@ main {
 
 .future li {
     margin: 10% 0px;
+.mono td{
+  line-height: 25px;
+  font-size: 23px;
+}
+
+.coto td{
+  line-height: 25px;
+  font-size: 25px;
+footer {
+   text-align: center;
+   background-color: #fefefe;
+   height: 50px;
+   width: 105%;
+   margin-left: -2%;
+}
+
+p {
+   font-weight: 300;
+   color: #222;
+   margin: 0;
+   line-height: 50px;
 }
