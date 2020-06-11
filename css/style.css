@@ -388,6 +388,11 @@ main {
     color: #FAFAFA;
 }
 
+.plo a {
+    text-decoration-line: none;
+    color: #FAFAFA;
+}
+
 .yuki {
     float: left;
 }
