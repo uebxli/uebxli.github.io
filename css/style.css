@@ -176,11 +176,12 @@ nav ul a {
    z-index: 300;
    cursor: pointer;
    transition: all .5s ease-out 0s;
+   text-align: center;
 }
 
 #logo h1 {
    color: #fafafa;
-   font-size: 30px;
+   font-size: 29px;
    line-height: 110px;
 }
 
@@ -199,14 +200,14 @@ nav ul a {
    from {
       width: 150px;
       height: 150px;
-      font-size: 30px;
+      font-size: 29px;
       line-height: 110px;
    }
 
    to {
       width: 75px;
       height: 75px;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 55px;
    }
 }
@@ -226,15 +227,15 @@ nav ul a {
    from {
       width: 75px;
       height: 75px;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 35px;
    }
 
    to {
       width: 150px;
       height: 150px;
-      font-size: 30px;
-      line-height: 110px;
+      font-size: 29px;
+      line-height: 109px;
    }
 }
 
@@ -625,7 +626,7 @@ p {
    }
 
    #logo h1 {
-      font-size: 24px;
+      font-size: 23px;
       line-height: 90px;
    }
 
@@ -633,14 +634,14 @@ p {
       from {
          width: 120px;
          height: 120px;
-         font-size: 24px;
+         font-size: 23px;
          line-height: 90px;
       }
 
       to {
          width: 75px;
          height: 75px;
-         font-size: 15px;
+         font-size: 14px;
          line-height: 55px;
       }
    }
@@ -649,14 +650,14 @@ p {
       from {
          width: 75px;
          height: 75px;
-         font-size: 15px;
+         font-size: 14px;
          line-height: 35px;
       }
 
       to {
          width: 120px;
          height: 120px;
-         font-size: 24px;
+         font-size: 23px;
          line-height: 90px;
       }
    }
@@ -688,7 +689,7 @@ p {
    }
 
    #logo h1 {
-      font-size: 24px;
+      font-size: 23px;
       line-height: 90px;
    }
 
@@ -696,14 +697,14 @@ p {
       from {
          width: 120px;
          height: 120px;
-         font-size: 24px;
+         font-size: 23px;
          line-height: 90px;
       }
 
       to {
          width: 75px;
          height: 75px;
-         font-size: 15px;
+         font-size: 14px;
          line-height: 55px;
       }
    }
@@ -712,14 +713,14 @@ p {
       from {
          width: 75px;
          height: 75px;
-         font-size: 15px;
+         font-size: 14px;
          line-height: 35px;
       }
 
       to {
          width: 120px;
          height: 120px;
-         font-size: 24px;
+         font-size: 23px;
          line-height: 90px;
       }
    }
