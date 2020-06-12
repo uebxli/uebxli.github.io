@@ -298,6 +298,10 @@ main {
    height: 950px;
 }
 
+_::-webkit-full-page-media, _:future, :root #plo {
+   height: 1000px;
+}
+
 .one {
    position: fixed;
    background-color: #fe4a49;
