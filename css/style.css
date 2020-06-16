@@ -69,7 +69,6 @@ nav ul a {
 /*タブレット・スマホ用ヘッダー*/
 .phone {
    display: none;
-   height: 60px;
 }
 
 #hamnav {
@@ -208,7 +207,7 @@ nav ul a {
       width: 75px;
       height: 75px;
       font-size: 14px;
-      line-height: 55px;
+      line-height: 35px;
    }
 }
 
@@ -617,7 +616,7 @@ p {
    }
 
    .top {
-      margin-top: 55px;
+      margin-top: 0;
    }
 
    #logo {
@@ -679,7 +678,7 @@ p {
    }
 
    .top {
-      margin-top: 55px;
+      margin-top: 0;
       height: 300px;
    }
 
