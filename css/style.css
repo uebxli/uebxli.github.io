@@ -207,7 +207,7 @@ nav ul a {
       width: 75px;
       height: 75px;
       font-size: 14px;
-      line-height: 35px;
+      line-height: 55px;
    }
 }
 
@@ -227,7 +227,7 @@ nav ul a {
       width: 75px;
       height: 75px;
       font-size: 14px;
-      line-height: 35px;
+      line-height: 55px;
    }
 
    to {
@@ -650,7 +650,7 @@ p {
          width: 75px;
          height: 75px;
          font-size: 14px;
-         line-height: 35px;
+         line-height: 55px;
       }
 
       to {
@@ -713,7 +713,7 @@ p {
          width: 75px;
          height: 75px;
          font-size: 14px;
-         line-height: 35px;
+         line-height: 55px;
       }
 
       to {
