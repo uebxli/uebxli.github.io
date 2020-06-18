@@ -1,8 +1,11 @@
+let browser = window.navigator.userAgent.toLowerCase(); //ブラウザ取得
 let logo = document.getElementById('logo');
+let body = document.body;
 let head = document.getElementById('head');
 let phonehead = document.getElementById('phonehead');
 
-let classRemove = function (mid, rc) {
+//ヘッダー挙動記述
+let classRemove = (mid, rc) => {
    if (mid.classList.contains(rc)) {
       mid.classList.remove(rc);
    }
@@ -26,42 +29,86 @@ window.onscroll = () => {
    }
 };
 
+//スムーススクロール記述
+//各要素取得
 let navOne = document.getElementById('one');
-let navTwo = document.getElementById('two');
-let navThr = document.getElementById('three');
-let pageTop = document.getElementById('pagetop');
-
 let hamOne = document.getElementById('hamone');
-let hamTwo = document.getElementById('hamtwo');
-let hamThr = document.getElementById('hamthree');
-
 let uebxli = document.getElementById('uebxli');
-let uebxliY = uebxli.getBoundingClientRect().top;
-
+let navTwo = document.getElementById('two');
+let hamTwo = document.getElementById('hamtwo');
 let plo = document.getElementById('plo');
-let ploY = plo.getBoundingClientRect().top;
-
+let navThr = document.getElementById('three');
+let hamThr = document.getElementById('hamthree');
 let need = document.getElementById('need');
-let needY = need.getBoundingClientRect().top;
 
-let headScroll = (elem, elemY) => {
-   elem.addEventListener('click', (e) => {
-      e.preventDefault();
+if (browser.indexOf('safari') !== -1 || browser.indexOf('iphone') !== -1 || browser.indexOf('ipad') !== -1) {
+   //ブラウザがSafari または iPhone または iPadの場合
+   let smooth = (e, time, where) => {
+      let eTop = e.getBoundingClientRect().top;
+      let eAmt = eTop / 100;
+      let curTime = 0;
+      while (curTime <= time) {
+         window.setTimeout(scroll, curTime, eAmt, where);
+         curTime += time / 100;
+      }
+   }
+
+   let scroll = (eAmt, where) => {
+      if (where == "center" || where == "") window.scrollBy(0, eAmt + 1);
+      if (where == "top") window.scrollBy(0, eAmt);
+   }
+
+   let safariScroll = (elem, scrollElem, where) => {
+      elem.addEventListener('click', (e) => {
+         e.preventDefault();
+         smooth(scrollElem, 275, where);
+      });
+   }
+
+   safariScroll(navOne, uebxli, "");
+   safariScroll(hamOne, uebxli, "");
+   safariScroll(navTwo, plo, "");
+   safariScroll(hamTwo, plo, "");
+   safariScroll(navThr, need, "");
+   safariScroll(hamThr, need, "");
+   safariScroll(logo, body, "top");
+
+} else {
+   //ブラウザがそれ以外の場合
+   let headScroll = (elem, elemY) => {
+      elem.addEventListener('click', (e) => {
+         console.log(e);
+         e.preventDefault();
+         window.scroll({
+            top: elemY,
+            behavior: 'smooth'
+         });
+      });
+   }
+
+   headScroll(logo, 0);
+
+   let uebxliY = uebxli.getBoundingClientRect().top;
+   headScroll(navOne, uebxliY);
+   headScroll(hamOne, uebxliY);
+
+   let ploY = plo.getBoundingClientRect().top;
+   headScroll(navTwo, ploY);
+   headScroll(hamTwo, ploY);
+
+   let needY = need.getBoundingClientRect().top;
+   headScroll(navThr, needY);
+   headScroll(hamThr, needY);
+
+   logo.addEventListener('click', (e) => {
       window.scroll({
-         top: elemY,
+         top: 0,
          behavior: 'smooth'
       });
    });
 }
 
-headScroll(navOne, uebxliY);
-headScroll(navTwo, ploY);
-headScroll(navThr, needY);
-headScroll(hamOne, uebxliY);
-headScroll(hamTwo, ploY);
-headScroll(hamThr, needY);
-headScroll(logo, 0);
-
+//ハンバーガーメニュー記述
 function toggleNav() {
    let body = document.body;
    let hamburger = document.getElementById('js_hamburger');
