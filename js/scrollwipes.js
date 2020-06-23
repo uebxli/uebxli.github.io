@@ -23,7 +23,7 @@ if (wbrowser.indexOf('iphone') !== -1 || wbrowser.indexOf('ipad') !== -1) {
     animation: tl,
     trigger: "#plo",
     start: "top top",
-    end: "+=2000",
+    end: "+=1000",
     scrub: true,
     pin: true,
     anticipatePin: 1
