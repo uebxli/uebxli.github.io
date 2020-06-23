@@ -680,34 +680,16 @@ p {
   }
 
   #hamnav {
-    top: -300px;
-    position: fixed;
-    width: 100%;
-    background-color: #222;
-    z-index: 500;
     height: 160px;
-    transition: all .5s ease-out 0s;
-    padding: 10px 0;
   }
 
   .hamul {
     height: 150px;
-    width: 100%;
-    text-align: center;
   }
 
-  .hamli {
-    display: block;
-  }
-
-  .hamli a {
-    color: #fefefe;
-    font-size: 25px;
-    line-height: 35px;
-  }
-  
   .hamli a {
     font-size: 15px;
+    line-height: 35px;
   }
   
   .top {
