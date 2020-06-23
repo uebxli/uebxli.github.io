@@ -64,6 +64,7 @@ if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
       e.preventDefault();
       phonesmooth(scrollElem, 275, where);
     });
+    console.log('オイ')
   }
 
   phoneScroll(navOne, uebxli, "");
