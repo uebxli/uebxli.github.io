@@ -1,4 +1,4 @@
-let browser = window.navigator.userAgent.toLowerCase(); //ブラウザ取得
+let ebrowser = window.navigator.userAgent.toLowerCase(); //ブラウザ取得
 let logo = document.getElementById('logo');
 let body = document.body;
 let head = document.getElementById('head');
@@ -70,7 +70,7 @@ let need = document.getElementById('need');
 //    });
 //  });
 //} else 
-if (browser.indexOf('safari') !== -1) {
+if (ebrowser.indexOf('safari') !== -1) {
   //ブラウザがSafariの場合
   let smooth = (e, time, where) => {
     let eTop = e.getBoundingClientRect().top;
