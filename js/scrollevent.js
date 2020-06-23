@@ -46,16 +46,16 @@ if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
   
   let phonesmooth = (e, time, where) => {
     let eTop = e.getBoundingClientRect().top;
-    let eAmt = eTop / 50;
+    let eAmt = eTop / 200;
     let curTime = 0;
     while (curTime <= time) {
       window.setTimeout(phonescroll, curTime, eAmt, where);
-      curTime += time / 50;
+      curTime += time / 100;
     }
   }
 
   let phonescroll = (eAmt, where) => {
-    if (where == "center" || where == "") window.scrollBy(0, eAmt + 1);
+    if (where == "center" || where == "") window.scrollBy(0, eAmt - 5);
     if (where == "top") window.scrollBy(0, eAmt);
   }
 
