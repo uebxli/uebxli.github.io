@@ -91,6 +91,7 @@ if (ebrowser.indexOf('safari') !== -1) {
     elem.addEventListener('click', (e) => {
       e.preventDefault();
       smooth(scrollElem, 275, where);
+      console.log('clear');
     });
   }
 
