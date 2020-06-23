@@ -44,7 +44,6 @@ let need = document.getElementById('need');
 if (browser.indexOf('iphone') !== -1 || browser.indexOf('ipad') !== -1) {
   let headScroll = (elem, elemY) => {
     elem.addEventListener('click', (e) => {
-      console.log(e);
       e.preventDefault();
       window.scroll({
         top: elemY,
@@ -106,7 +105,6 @@ if (browser.indexOf('iphone') !== -1 || browser.indexOf('ipad') !== -1) {
   //ブラウザがそれ以外の場合
   let headScroll = (elem, elemY) => {
     elem.addEventListener('click', (e) => {
-      console.log(e);
       e.preventDefault();
       window.scroll({
         top: elemY,
