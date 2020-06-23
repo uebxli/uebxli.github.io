@@ -70,7 +70,7 @@ let need = document.getElementById('need');
 //    });
 //  });
 //} else 
-  if (browser.indexOf('safari') !== -1) {
+if (browser.indexOf('safari') !== -1) {
   //ブラウザがSafariの場合
   let smooth = (e, time, where) => {
     let eTop = e.getBoundingClientRect().top;
@@ -101,7 +101,7 @@ let need = document.getElementById('need');
   safariScroll(navThr, need, "");
   safariScroll(hamThr, need, "");
   safariScroll(logo, body, "top");
-  
+
 } else {
   //ブラウザがそれ以外の場合
   let headScroll = (elem, elemY) => {
