@@ -50,13 +50,13 @@ if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
     let curTime = 0;
     while (curTime <= time) {
       window.setTimeout(phonescroll, curTime, eAmt, where);
-      curTime += time / 50;
+      curTime += time / 10;
     }
   }
 
   let phonescroll = (eAmt, where) => {
     if (where == "center" || where == "") window.scrollBy(0, eAmt * 2);
-    if (where == "top") window.scrollBy(0, eAmt);
+    if (where == "top") window.scrollBy(0, eAmt　* 2);
     console.log('オイ')
   }
 
