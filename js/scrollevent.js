@@ -42,32 +42,34 @@ let hamThr = document.getElementById('hamthree');
 let need = document.getElementById('need');
 
 if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
-  let smooth = (e, time, where) => {
+  console.log(ebrowser);
+  
+  let phonesmooth = (e, time, where) => {
     let eTop = e.getBoundingClientRect().top;
     let eAmt = eTop / 100;
     let curTime = 0;
     while (curTime <= time) {
-      window.setTimeout(scroll, curTime, eAmt, where);
+      window.setTimeout(phonescroll, curTime, eAmt, where);
       curTime += time / 100;
     }
   }
 
-  let scroll = (eAmt, where) => {
+  let phonescroll = (eAmt, where) => {
     if (where == "center" || where == "") window.scrollBy(0, eAmt + 5);
     if (where == "top") window.scrollBy(0, eAmt);
   }
 
-  let safariScroll = (elem, scrollElem, where) => {
+  let phoneScroll = (elem, scrollElem, where) => {
     elem.addEventListener('click', (e) => {
       e.preventDefault();
-      smooth(scrollElem, 275, where);
+      phonesmooth(scrollElem, 275, where);
     });
   }
 
-  safariScroll(hamOne, uebxli, "");
-  safariScroll(hamTwo, plo, "");
-  safariScroll(hamThr, need, "");
-  safariScroll(logo, body, "top");
+  phoneScroll(hamOne, uebxli, "");
+  phoneScroll(hamTwo, plo, "");
+  phoneScroll(hamThr, need, "");
+  phoneScroll(logo, body, "top");
 
 } else
 if (ebrowser.indexOf('safari') !== -1) {
