@@ -50,19 +50,19 @@ if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
     let curTime = 0;
     while (curTime <= time) {
       window.setTimeout(phonescroll, curTime, eAmt, where);
-      curTime += time / 100;
+      curTime += time / 1;
     }
   }
 
   let phonescroll = (eAmt, where) => {
-    if (where == "center" || where == "") window.scrollBy(0, eAmt + 10);
+    if (where == "center" || where == "") window.scrollBy(0, eAmt + 100);
     if (where == "top") window.scrollBy(0, eAmt);
   }
 
   let phoneScroll = (elem, scrollElem, where) => {
     elem.addEventListener('click', (e) => {
       e.preventDefault();
-      phonesmooth(scrollElem, 300, where);
+      phonesmooth(scrollElem, 275, where);
     });
     console.log('オイ')
   }
