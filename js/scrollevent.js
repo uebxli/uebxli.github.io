@@ -56,7 +56,7 @@ if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
 
   let phonescroll = (eAmt, where) => {
     if (where == "center" || where == "") window.scrollBy(0, eAmt * 150);
-    if (where == "top") window.scrollBy(0, eAmt * 150);
+    if (where == "top") window.scrollBy(0, eAmt * 10);
   }
 
   let phoneScroll = (elem, scrollElem, where) => {
