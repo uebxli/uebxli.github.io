@@ -1,4 +1,4 @@
-let browser = window.navigator.userAgent.toLowerCase(); //ブラウザ取得
+let wbrowser = window.navigator.userAgent.toLowerCase(); //ブラウザ取得
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.defaults({
@@ -18,7 +18,7 @@ tl.from(".two", {
   });
 
 
-if (browser.indexOf('iphone') !== -1 || browser.indexOf('ipad') !== -1) {
+if (wbrowser.indexOf('iphone') !== -1 || wbrowser.indexOf('ipad') !== -1) {
   ScrollTrigger.create({
     animation: tl,
     trigger: "#plo",
