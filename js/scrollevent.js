@@ -46,7 +46,7 @@ if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
   
   let phonesmooth = (e, time, where) => {
     let eTop = e.getBoundingClientRect().top;
-    let eAmt = eTop / 100;
+    let eAmt = eTop / 50;
     let curTime = 0;
     while (curTime <= time) {
       window.setTimeout(phonescroll, curTime, eAmt, where);
