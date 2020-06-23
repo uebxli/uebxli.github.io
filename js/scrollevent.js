@@ -41,35 +41,36 @@ let navThr = document.getElementById('three');
 let hamThr = document.getElementById('hamthree');
 let need = document.getElementById('need');
 
-if (browser.indexOf('iphone') !== -1 || browser.indexOf('ipad') !== -1) {
-  let headScroll = (elem, elemY) => {
-    elem.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.scroll({
-        top: elemY,
-        behavior: 'smooth'
-      });
-    });
-  }
-
-  headScroll(logo, 0);
-
-  let uebxliY = uebxli.getBoundingClientRect().top;
-  headScroll(hamOne, uebxliY);
-
-  let ploY = plo.getBoundingClientRect().top;
-  headScroll(hamTwo, ploY);
-
-  let needY = need.getBoundingClientRect().top;
-  headScroll(hamThr, needY);
-
-  logo.addEventListener('click', (e) => {
-    window.scroll({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-} else if (browser.indexOf('safari') !== -1) {
+//if (browser.indexOf('iphone') !== -1 || browser.indexOf('ipad') !== -1) {
+//  let headScroll = (elem, elemY) => {
+//    elem.addEventListener('click', (e) => {
+//      e.preventDefault();
+//      window.scroll({
+//        top: elemY,
+//        behavior: 'smooth'
+//      });
+//    });
+//  }
+//
+//  headScroll(logo, 0);
+//
+//  let uebxliY = uebxli.getBoundingClientRect().top;
+//  headScroll(hamOne, uebxliY);
+//
+//  let ploY = plo.getBoundingClientRect().top;
+//  headScroll(hamTwo, ploY);
+//
+//  let needY = need.getBoundingClientRect().top;
+//  headScroll(hamThr, needY);
+//
+//  logo.addEventListener('click', (e) => {
+//    window.scroll({
+//      top: 0,
+//      behavior: 'smooth'
+//    });
+//  });
+//} else 
+  if (browser.indexOf('safari') !== -1) {
   //ブラウザがSafariの場合
   let smooth = (e, time, where) => {
     let eTop = e.getBoundingClientRect().top;
