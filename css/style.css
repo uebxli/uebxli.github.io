@@ -75,6 +75,7 @@ nav ul a {
 
 .phone {
    display: none;
+  background-color: transparent;
 }
 
 #hamnav {
@@ -607,10 +608,6 @@ p {
 
 
 /* 画面横幅768px~1068px */
-   .top {
-      margin-top: 0;
-   }
-
 @media only screen and (min-width: 768px) and (max-width: 1068px) {
   /*ヘッダー部分*/
   .pc {
@@ -620,7 +617,7 @@ p {
     display: block;
   }
   .top {
-    margin-top: 55px;
+    margin-top: 0px;
   }
   #logo {
     width: 120px;
@@ -717,43 +714,43 @@ p {
     display: block;
   }
   .top {
-    margin-top: 55px;
+    margin-top: 0px;
     height: 300px;
   }
   #logo {
-    width: 120px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
   #logo h1 {
-    font-size: 23px;
-    line-height: 90px;
+    font-size: 13px;
+    line-height: 55px;
   }
   @keyframes small {
     from {
-      width: 120px;
-      height: 120px;
-      font-size: 23px;
-      line-height: 90px;
+      width: 70px;
+      height: 70px;
+      font-size: 13px;
+      line-height: 55px;
     }
     to {
-      width: 75px;
-      height: 75px;
-      font-size: 14px;
-      line-height: 55px;
+      width: 55px;
+      height: 55px;
+      font-size: 5px;
+      line-height: 50px;
     }
   }
   @keyframes large {
     from {
-      width: 75px;
-      height: 75px;
-      font-size: 14px;
-      line-height: 35px;
+      width: 55px;
+      height: 55px;
+      font-size: 5px;
+      line-height: 50px;
     }
     to {
-      width: 120px;
-      height: 120px;
-      font-size: 23px;
-      line-height: 90px;
+      width: 70px;
+      height: 70px;
+      font-size: 13px;
+      line-height: 55px;
     }
   }
   /*Uebxli
