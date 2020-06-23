@@ -42,8 +42,6 @@ let hamThr = document.getElementById('hamthree');
 let need = document.getElementById('need');
 
 if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
-  console.log(ebrowser);
-  
   let phonesmooth = (e, time, where) => {
     let eTop = e.getBoundingClientRect().top;
     let eAmt = eTop / 100;
@@ -57,7 +55,6 @@ if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
   let phonescroll = (eAmt, where) => {
     if (where == "center" || where == "") window.scrollBy(0, eAmt * 2);
     if (where == "top") window.scrollBy(0, eAmt　* 2);
-    console.log('オイ')
   }
 
   let phoneScroll = (elem, scrollElem, where) => {
