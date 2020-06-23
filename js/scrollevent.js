@@ -42,33 +42,33 @@ let hamThr = document.getElementById('hamthree');
 let need = document.getElementById('need');
 
 if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
-  let headScroll = (elem, elemY) => {
+  let smooth = (e, time, where) => {
+    let eTop = e.getBoundingClientRect().top;
+    let eAmt = eTop / 100;
+    let curTime = 0;
+    while (curTime <= time) {
+      window.setTimeout(scroll, curTime, eAmt, where);
+      curTime += time / 100;
+    }
+  }
+
+  let scroll = (eAmt, where) => {
+    if (where == "center" || where == "") window.scrollBy(0, eAmt + 5);
+    if (where == "top") window.scrollBy(0, eAmt);
+  }
+
+  let safariScroll = (elem, scrollElem, where) => {
     elem.addEventListener('click', (e) => {
       e.preventDefault();
-      window.scroll({
-        top: elemY,
-        behavior: 'smooth'
-      });
+      smooth(scrollElem, 275, where);
     });
   }
 
-  headScroll(logo, 0);
+  safariScroll(hamOne, uebxli, "");
+  safariScroll(hamTwo, plo, "");
+  safariScroll(hamThr, need, "");
+  safariScroll(logo, body, "top");
 
-  let uebxliY = uebxli.getBoundingClientRect().top;
-  headScroll(hamOne, uebxliY);
-
-  let ploY = plo.getBoundingClientRect().top;
-  headScroll(hamTwo, ploY);
-
-  let needY = need.getBoundingClientRect().top;
-  headScroll(hamThr, needY);
-
-  logo.addEventListener('click', (e) => {
-    window.scroll({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
 } else
 if (ebrowser.indexOf('safari') !== -1) {
   //ブラウザがSafariの場合
@@ -83,7 +83,7 @@ if (ebrowser.indexOf('safari') !== -1) {
   }
 
   let scroll = (eAmt, where) => {
-    if (where == "center" || where == "") window.scrollBy(0, eAmt + 5);
+    if (where == "center" || where == "") window.scrollBy(0, eAmt + 1);
     if (where == "top") window.scrollBy(0, eAmt);
   }
 
