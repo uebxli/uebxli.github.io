@@ -46,7 +46,7 @@ if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
   
   let phonesmooth = (e, time, where) => {
     let eTop = e.getBoundingClientRect().top;
-    let eAmt = eTop - 50;
+    let eAmt = eTop / 100;
     let curTime = 0;
     while (curTime <= time) {
       window.setTimeout(phonescroll, curTime, eAmt, where);
@@ -55,7 +55,7 @@ if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
   }
 
   let phonescroll = (eAmt, where) => {
-    if (where == "center" || where == "") window.scrollBy(0, eAmt + 100);
+    if (where == "center" || where == "") window.scrollBy(0, eAmt * 2);
     if (where == "top") window.scrollBy(0, eAmt);
   }
 
