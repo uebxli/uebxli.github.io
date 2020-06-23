@@ -50,7 +50,7 @@ if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
     let curTime = 0;
     while (curTime <= time) {
       window.setTimeout(phonescroll, curTime, eAmt, where);
-      curTime += time / 200;
+      curTime += time / 150;
     }
   }
 
