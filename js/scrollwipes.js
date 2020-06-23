@@ -28,6 +28,7 @@ if (wbrowser.indexOf('iphone') !== -1 || wbrowser.indexOf('ipad') !== -1) {
     pin: true,
     anticipatePin: 1
   });
+  console.log('clear');
 } else {
   ScrollTrigger.create({
     animation: tl,
