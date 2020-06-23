@@ -55,7 +55,7 @@ if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
   }
 
   let phonescroll = (eAmt, where) => {
-    if (where == "center" || where == "") window.scrollBy(0, eAmt + 5);
+    if (where == "center" || where == "") window.scrollBy(0, eAmt + 6);
     if (where == "top") window.scrollBy(0, eAmt);
   }
 
@@ -66,8 +66,11 @@ if (ebrowser.indexOf('iphone') !== -1 || ebrowser.indexOf('ipad') !== -1) {
     });
   }
 
+  phoneScroll(navOne, uebxli, "");
   phoneScroll(hamOne, uebxli, "");
+  phoneScroll(navTwo, plo, "");
   phoneScroll(hamTwo, plo, "");
+  phoneScroll(navThr, need, "");
   phoneScroll(hamThr, need, "");
   phoneScroll(logo, body, "top");
 
