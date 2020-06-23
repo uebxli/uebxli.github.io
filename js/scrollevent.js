@@ -101,6 +101,7 @@ if (browser.indexOf('iphone') !== -1 || browser.indexOf('ipad') !== -1) {
   safariScroll(navThr, need, "");
   safariScroll(hamThr, need, "");
   safariScroll(logo, body, "top");
+  
 } else {
   //ブラウザがそれ以外の場合
   let headScroll = (elem, elemY) => {
