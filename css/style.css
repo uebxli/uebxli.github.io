@@ -302,8 +302,8 @@ main {
   font-weight: 100;
   margin: 0px;
   background-color: #bfdeea;
-  padding: 60px 75px 80px 75px;
-  margin-bottom: 80px;
+  padding: 80px 75px 80px 75px;
+  margin: 100px 0px;
 }
 
 .item img {
