@@ -292,7 +292,18 @@ main {
   margin: 0px;
   background-color: #bfdeea;
   padding: 80px 0px 80px 0px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
+}
+
+.what_p {
+  color: #222;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 100;
+  margin: 0px;
+  background-color: #bfdeea;
+  padding: 80px 75px 80px 75px;
+  margin: 180px 0px;
 }
 
 .item img {
@@ -549,6 +560,7 @@ _:future,
 
 .rina {
   float: left;
+  color: #222;
 }
 
 .kero {
@@ -557,6 +569,7 @@ _:future,
 
 .tsuki {
   float: left;
+  color: #222;
 }
 
 .twitter {
