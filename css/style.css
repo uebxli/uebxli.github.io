@@ -280,30 +280,28 @@ main {
   margin-left: -8px;
 }
 
-.uebxli {
+#uebxli {
   margin-top: 0px;
-  margin-bottom: 150px;
-}
-
-.what {
-  color: #fafafa;
+  margin-bottom: 10%;
   text-align: center;
-  font-size: 3rem;
-  margin: 0px;
-  background-color: #bfdeea;
-  padding: 80px 0px 80px 0px;
-  margin-bottom: 30px;
 }
 
-.what_p {
+#uebxli p {
+  max-width: 80%;
   color: #222;
-  text-align: center;
   font-size: 1.8rem;
   font-weight: 100;
-  margin: 0px;
+  padding: 5% 10%;
+  margin: 5% 0;
+}
+
+#uebxli h2 {
+  color: #fafafa;
   background-color: #bfdeea;
-  padding: 80px 75px 80px 75px;
-  margin: 180px 0px;
+  font-size: 3rem;
+  margin: 0px;
+  padding: 80px 0px;
+  margin-bottom: 50px;
 }
 
 .item img {
@@ -316,7 +314,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
-  margin: 15px 75px 15px 75px;
+  margin: 15px 75px ;
 }
 
 #plo {
@@ -750,16 +748,19 @@ p {
   }
 
 
-  /*Uebxli
-   ---------------------------------------------------*/
-  .uebxli {
+  /*Uebxli*/
+  #uebxli {
     margin-top: 0px;
     margin-bottom: 100px;
   }
 
-  .what {
+  #uebxli p{
+    font-size: 1.3rem;
+  }
+
+  #uebxli h2 {
     font-size: 2rem;
-    padding: 60px 0px 60px 0px;
+    padding: 60px 0px;
     margin-bottom: 40px;
   }
 
@@ -767,7 +768,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-    margin: 15px 75px 15px 75px;
+    margin: 15px ;
   }
 
   .twitter {
