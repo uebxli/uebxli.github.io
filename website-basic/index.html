@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>MUKOHOTEL</h1>
+    <ul class="menu">
+      <li>
+        <a href="#room">ROOM</a>
+      </li>
+      <li>
+        <a href="#rate">RATE</a>
+      </li>
+      <li>
+        <a href="#restaurant">RESTAURANT</a>
+      </li>
+
+    </ul>
+    <a id="reserve" href="#booknow">
+      <div>BOOK NOW</div>
+    </a>
+  </header>
+
+  <main>
+    <div class="top">
+      <img src="img/scenery.jpg">
+      <p>
+        阪神鳴尾・武庫川女子大学前から徒歩5分にある<br>
+        パンがおいしいスマートデザインホテル
+      </p>
+    </div>
+
+    
+    <main>
+      <section id="room">
+        <h2>ROOM</h2>
+        <div class="room">
+          <img src="img/doubleroom.jpg" alt="ダブルベット">
+          <p>ダブルルーム</p>
+        </div>
+        <div class="room">
+          <img src="img/twinroom.jpg" alt="ツインベッド">
+          <p>ツインルーム</p>
+        </div>
+
+        <div class="amenity">
+          <h2>AMENITY</h2>
+          <P>バスタオル/フェイスタオル/イオンドライヤー/ルームウェア/ルームシューズ/シャンプー/コンディショナー/ボディソープ/ハンドソープ/アルコール/歯ブラシ/カミソリ</P>
+        </div>
+      </section>
+      
+      <section id="rate">
+        <h2>ROOM RATE</h2>
+      <table border="1">
+        <tr><td></td><th>1名様</th><th>2名様</th></tr>
+        <tr><th>シングル</th><td>6,000</td><td>-</td></tr>
+        <tr><th>ダブル</th><td>-</td><td>9,800</td></tr>
+        <tr><th>ツイン</th><td>-</td><td>10,500</td></tr>
+        </table>
+      </section>
+
+      <section id="restaurant">
+          <h2>RESTAURANT</h2>
+      
+      <img src="img/croissant.jpg">
+      <img src="img/bread.jpg"><br>
+      <img src="img/buffet.jpg">
+      <img src="img/breakfast.jpg">
+      
+      <p>毎朝20種類以上の焼き立てパンをご用意しております。<br>
+          こだわりの朝食メニューをぜひお楽しみください。</p>
+      <div class="buffet">
+          <p>朝食ビュッフェ　１名様：1000円(税込)</p>
+          </div>
+      </section>
+
+      <form id="booknow">
+        <h2>RESERVATION</h2>
+
+        <input type="text" class="yoyaku">月<input type="text" class="yoyaku">日から　<input type="text" class="yoyaku">泊<br>
+        <input type="text" class="yoyaku">名様　<input type="text" class="yoyaku">部屋<br>
+
+        <div>
+          <label>お名前：<input type="text" class="kozinzyoho"></label><br>
+          <label>ご住所：<input type="text" class="kozinzyoho"></label><br>
+          <label>連絡先：<input type="text" class="kozinzyoho"></label><br>
+          <label>その他ご要望：<textarea></textarea></label><br>
+        </div>
+        <button type="submit">SEND</button>
+
+      </form>
+    </main>
+   
+
+
+    <footer>
+      <p class="footer">MUKO　HOTEL</p>
+      <div class="address">
+        <p>tel: 0798-47-1212</p>
+        <p>address: 〒663-8558</p>
+        <p>兵庫県西宮市池開町6-46</p>
+      </div>
+      <p class="copyright">Copyright @2020 MUKOHOTEL</p>
+    </footer>
+</body>
+
+</html>
