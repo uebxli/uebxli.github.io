@@ -1,0 +1,616 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&display=swap');
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #fafafa;
+  overflow-x: hidden;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #222;
+}
+
+header {
+  display: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 400;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+#hamnav {
+  position: fixed;
+  right: -320px;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  padding-top: 40px;
+  background-color: rgba(255, 255, 255, .8);
+  transition: all .5s;
+  z-index: 500;
+}
+
+.hamul {
+  width: 500px;
+  margin: 0;
+  padding: 15px;
+  list-style: none;
+}
+
+.hamli {
+  padding: 0 5px;
+}
+
+.hamli a {
+  display: block;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #222;
+  margin-top: 20px;
+}
+
+h1 {
+  position: absolute;
+  top: 30px;
+  left: 95px;
+  font-size: 2em;
+  margin: 0;
+  color: #d36582;
+  z-index: 300;
+}
+
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  padding-top: 10px;
+  z-index: 200;
+}
+
+/*タブレット・スマホ用ヘッダー*/
+.phone {
+  display: none;
+  background-color: transparent;
+}
+
+
+
+/* ハンバーガー部分記述 */
+
+
+.hamburger {
+  position: fixed;
+  top: 13px;
+  right: 0;
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 5px;
+  transition: all .5s ease-out 0s;
+  z-index: 600;
+}
+
+.hamburger_line {
+  position: absolute;
+  left: 0px;
+  margin-top: 14px;
+  width: 25px;
+  height: 2px;
+  transition: all .6s;
+  background-color: #222;
+}
+
+.hamburger_line2 {
+  margin-top: 24px;
+  opacity: 1;
+}
+
+.hamburger_line3 {
+  margin-top: 34px;
+}
+
+/* ハンバーガーが押されたとき */
+
+.nav_open #hamnav {
+  right: 0;
+}
+
+.nav_open .hamburger_line1 {
+  top: 10px;
+  transform: rotate(-45deg);
+}
+
+.nav_open .hamburger_line2 {
+  opacity: 0;
+  left: 30px;
+}
+
+.nav_open .hamburger_line3 {
+  transform: rotate(45deg);
+  top: -10px;
+}
+
+h2 {
+  font-size: 3.5vw;
+  letter-spacing: .2vw;
+  height: 2.9vw;
+  line-height: 2.9vw;
+  padding-left: .2em;
+  border-left: solid .5em;
+}
+
+
+/*UGOKラジオとは*/
+.what {
+  padding: 50px 100px;
+  width: 60%;
+  margin: 50px auto;
+  background-image: url(../img/what_back.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.what_item {
+  width: 60%;
+  margin-right: 10%;
+}
+
+.what h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  height: 2.7vw;
+  line-height: 2.7vw;
+  font-size: 2.7vw;
+  border-color: #00c49a;
+}
+
+.what_fcontainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.what p {
+  width: 100%;
+  font-size: 1.5vw;
+  margin: 15px 20px 0 0;
+}
+
+.what img {
+  width: 150px;
+}
+
+.top {
+  background: url(../img/top_pc.png) no-repeat center center;
+  height: 928px;
+  background-size: cover;
+}
+
+
+/*メンバー紹介*/
+
+.intro {
+  text-align: center;
+}
+
+.chamu {
+  background-color: #2b59c3;
+  width: 100%;
+  color: white;
+}
+
+.akari {
+  background-color: #d36582;
+  width: 100%;
+  color: white;
+}
+
+.maako {
+  background-color: #ffe95c;
+  width: 100%;
+  color: black;
+}
+
+.twicasicon,
+.twittericon {
+  width: 4%;
+  position: relative;
+  left: 30%;
+  transform: translate(-80%, -50%);
+  top: -115px;
+}
+
+.twittericon {
+  top: -120px;
+}
+
+.icon {
+  width: 20%;
+  position: relative;
+  left: -20%;
+  top: 100px;
+  transform: translate(-10%);
+}
+
+.name {
+  width: 40%;
+  border-left: none;
+  border-bottom: solid 2px white;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 10px;
+  position: relative;
+  left: 40%;
+  transform: translate(5%);
+  top: -80px;
+}
+
+.hoby {
+  text-align: left;
+  font-size: 2.5vw;
+  width: 40%;
+  position: relative;
+  left: 50%;
+  transform: translate(-20%);
+  top: -100px;
+  border-bottom: dotted 4px white;
+}
+
+.word {
+  text-align: left;
+  font-size: 2vw;
+  width: 40%;
+  position: relative;
+  left: 50%;
+  transform: translate(-20%);
+  top: -80px;
+}
+
+.maako .name,
+.maako .hoby {
+  border-color: black;
+}
+
+
+
+/*配信内容*/
+.contents {
+  width: 50%;
+  padding: 50px 100px;
+  margin: 0 auto 30px auto;
+  background-image: url(../img/contants_back.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.contents h2 {
+  width: 12vw;
+  height: 2.7vw;
+  line-height: 2.7vw;
+  font-size: 2.7vw;
+  margin: 90px auto 100px auto;
+  border-color: #00c49a;
+}
+
+.contents p {
+  width: 100%;
+  font-size: 1.5vw;
+  margin: 15px 20px 0 0;
+}
+
+.contents img {
+  width: 100px;
+}
+
+.contants_f {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contants_f a {
+  margin: 10%;
+}
+
+.contants_item {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.reality {
+  margin: 70px 0;
+  text-align: center;
+}
+
+.reality a {
+  display: inline-block;
+  color: #333;
+  font-size: 25px;
+  transition: .3s;
+}
+
+.reality img {
+  width: 20px;
+}
+
+.reality a:hover {
+  color: #00c49a;
+}
+
+/*アーカイブ*/
+.archive {
+  background-color: #253c78;
+  color: #ffffff;
+}
+
+.archive_h2_warp {
+  width: 22%;
+  padding: 5%;
+  margin: 0 34%;
+}
+
+.archive h2 {
+  text-align: center;
+  margin-bottom: 40%
+}
+
+.archive_container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 3%;
+  margin-left: 9%;
+  margin-right: 1%;
+}
+
+.archive_item {
+  width: 30%;
+}
+
+.archive_item h4 {
+  margin: 0 25%;
+  font-size: 1.8vw;
+}
+
+.archive_item a {
+  width: 0;
+  height: 0;
+  margin: 0 25%;
+}
+
+.archive_item img {
+  width: 50%;
+  height: 50%;
+}
+
+.archive_item img:hover {
+  opacity: 0.5;
+}
+
+.archive_item p {
+  margin: 0 22.5% 0 25%;
+  font-size: 1.2vw;
+}
+
+footer {
+  text-align: center;
+  margin: 25px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  /*ヘッダー部分*/
+  .pc {
+    display: none;
+  }
+
+  .phone {
+    display: block;
+  }
+
+  #hamnav {
+    width: 200px;
+    height: 100vh;
+  }
+
+  .hamul {
+    height: 150px;
+  }
+
+  .hamli a {
+    font-size: 15px;
+    line-height: 35px;
+  }
+
+  .top {
+    margin-top: 0px;
+    height: 300px;
+  }
+
+  .logo img {
+    top: 0;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+  }
+
+  h1 {
+    top: 30px;
+    left: 80px;
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .top {
+    background-image: url(../img/top_phone.png);
+    height: 928px;
+  }
+
+  /*ugokラジオとは*/
+  .what {
+    margin: 10px auto;
+  }
+
+  .what h2 {
+    font-size: 3.5vw;
+    height: 3.5vw;
+    line-height: 3.5vw;
+  }
+  
+  .what p {
+    font-size: 2.8vw;
+  }
+  
+  .what a {
+    width: 30%;
+    text-align: right;
+  }
+
+  .what img {
+    width: 100%;
+  }
+
+  /*メンバー紹介*/
+
+  .intro {
+    text-align: center;
+  }
+
+  .chamu {
+    background-color: #2b59c3;
+    width: 100%;
+    color: white;
+  }
+
+  .akari {
+    background-color: #d36582;
+    width: 100%;
+    color: white;
+  }
+
+  .maako {
+    background-color: #ffe95c;
+    width: 100%;
+    color: black;
+  }
+
+  .twicasicon,
+  .twittericon {
+    width: 4%;
+    position: relative;
+    left: 30%;
+    transform: translate(-80%, -50%);
+    top: -70px;
+  }
+
+  .twittericon {
+    top: -75px;
+  }
+
+  .icon {
+    width: 20%;
+    position: relative;
+    left: -20%;
+    top: 50px;
+    transform: translate(-10%);
+  }
+
+  .name {
+    width: 40%;
+    border-left: none;
+    border-bottom: solid 2px white;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 10px;
+    position: relative;
+    left: 40%;
+    transform: translate(5%);
+    top: -50px;
+  }
+
+  .hoby {
+    text-align: left;
+    font-size: 2.5vw;
+    width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translate(-20%);
+    top: -70px;
+    border-bottom: dotted 4px white;
+  }
+
+  .word {
+    text-align: left;
+    font-size: 2vw;
+    width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translate(-20%);
+    top: -60px;
+  }
+
+  .maako .name,
+  .maako .hoby {
+    border-color: black;
+  }
+
+  /* 配信内容 */
+  .contents {
+    width: 80%;
+    padding: 30px 50px;
+    background-position: center;
+  }
+  
+  .contents h2 {
+    font-size: 3.5vw;
+    width: 15vw;
+    height: 3.5vw;
+    line-height: 3.5vw;
+    margin: 50px auto;
+  }
+
+  .contents p {
+    font-size: 2.8vw;
+  }
+  
+  /*アーカイブ*/
+
+  .archive_container {
+    padding-bottom: 5%;
+    margin-left: 4%;
+    margin-right: 0;
+  }
+
+  .archive_item {
+    width: 32%;
+  }
+
+  .archive_item h4 {
+    margin: 0 17.5%;
+  }
+
+  .archive_item a {
+    margin: 0 17.5%;
+  }
+
+  .archive_item img {
+    width: 20vw;
+    height: 7vh;
+  }
+
+  .archive_item p {
+    margin: 0 10% 0 16%;
+  }
+
+}
