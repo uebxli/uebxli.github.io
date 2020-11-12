@@ -1,0 +1,40 @@
+main {
+  max-width: 100%;
+}
+
+h2 {
+    margin: 100px;
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.cats img {
+    width: 270px;
+}
+
+figure {
+    display: inline-block;
+    width: 270px;
+    background-color: peachpuff;
+    text-align: center;
+    margin: 50px;
+}
+
+figcaption {
+    display: inline;
+    font-size: 15px;
+}
+
+.name {
+    font-size: 30px;
+    padding: 10px;
+}
+
+footer {
+    clear: both;
+}
