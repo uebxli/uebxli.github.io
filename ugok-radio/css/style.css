@@ -653,11 +653,13 @@ footer {
   }
   
   .contents h2 {
-    width: 14vw;
+    width: 15vw;
     height: 3vw;
     margin: 30px auto;
     font-size: 3vw;
     line-height: 3vw;
+    padding-left: 0;
+    text-align: center;
   }
   
   .contents p {
@@ -680,9 +682,11 @@ footer {
   /* アーカイブ */
   .archive h2 {
     font-size: 3vw;
-    width: 17vw;
+    width: 18vw;
     height: 3vw;
     line-height: 3vw;
+    padding-left: 0;
+    text-align: center;
   }
 
   .archive_item img {
@@ -700,8 +704,10 @@ footer {
 }
   
   .report h2 {
-    width: 34vw;
+    width: 37vw;
     font-size: 3vw;
+    padding-left: 0;
+    text-align: center;
   }
 
   .report h3 {
