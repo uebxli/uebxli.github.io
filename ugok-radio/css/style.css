@@ -544,14 +544,14 @@ footer {
   
   /*ラジオとは*/
   .what h2 {
-    font-size: 2.5vw;
-    height: 2.5vw;
-    line-height: 2.5vw;
-    width: 25vw;
+    font-size: 3vw;
+    height: 3vw;
+    line-height: 3vw;
+    width: 28vw;
   }
   
   .what p {
-    font-size: 2.3vw;
+    font-size: 2.4vw;
   }
   
   .what a {
@@ -633,7 +633,7 @@ footer {
 
 .word {
   text-align: left;
-  font-size: 2.3vw;
+  font-size: 2.4vw;
   width: 40%;
   position: relative;
   left: 50%;
@@ -649,7 +649,7 @@ footer {
 /* 配信内容 */
   .contents {
     padding: 0;
-    margin: 20px;
+    margin: 25px;
   }
   
   .contents h2 {
@@ -661,7 +661,7 @@ footer {
   }
   
   .contents p {
-    font-size: 2.3vw;
+    font-size: 2.4vw;
   }
   
   .contents img {
@@ -673,31 +673,41 @@ footer {
   }
   
   .reality {
-    font-size: 2.5vh;
+    font-size: 2.5vw;
     margin: 50px 0 30px 0;
   }
   
   /* アーカイブ */
   .archive h2 {
-    font-size: 2.5vw;
-    width: 15vw;
-    height: 2.5vw;
-    line-height: 2.6vw;
+    font-size: 3vw;
+    width: 16vw;
+    height: 3vw;
+    line-height: 3vw;
   }
 
   .archive_item img {
-    height: 60%;
+    height: 57%;
   }
 
   .archive_item p {
-    font-size: 2.3vw;
+    font-size: 2.4vw;
   }
   
   /*レポート*/
+  .report {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+  
   .report h2 {
-    width: 100%;
+    width: 33vw;
+    font-size: 3vw;
   }
 
+  .report h3 {
+    font-size: 2.7vw;
+  }
+  
   .report_item {
     margin-top: 20%;
   }
@@ -707,7 +717,7 @@ footer {
   }
 
   .report p {
-    font-size: 2.3vw;
+    font-size: 2.4vw;
     text-align: left;
   }
 
