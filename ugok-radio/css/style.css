@@ -649,7 +649,7 @@ footer {
 /* 配信内容 */
   .contents {
     padding: 0;
-    margin: 25px;
+    margin: 90px 25px;
   }
   
   .contents h2 {
@@ -686,11 +686,11 @@ footer {
   }
 
   .archive_item img {
-    height: 57%;
+    height: 16vw;
   }
 
   .archive_item p {
-    font-size: 2.4vw;
+    font-size: 2.3vw;
   }
   
   /*レポート*/
