@@ -653,7 +653,7 @@ footer {
   }
   
   .contents h2 {
-    width: 13vw;
+    width: 14vw;
     height: 3vw;
     margin: 30px auto;
     font-size: 3vw;
@@ -680,7 +680,7 @@ footer {
   /* アーカイブ */
   .archive h2 {
     font-size: 3vw;
-    width: 16vw;
+    width: 17vw;
     height: 3vw;
     line-height: 3vw;
   }
@@ -700,7 +700,7 @@ footer {
 }
   
   .report h2 {
-    width: 33vw;
+    width: 34vw;
     font-size: 3vw;
   }
 
