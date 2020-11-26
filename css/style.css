@@ -800,7 +800,7 @@ p {
     margin-bottom: 100px;
   }
 
-  #uebxli p {
+  .uebxli p {
     font-size: 1.3rem;
   }
 
@@ -816,7 +816,35 @@ p {
     gap: 15px;
     margin: 15px;
   }
+  
+  .sait {
+      
+  }
 
+  .sait_link{
+    margin-bottom: 8%;
+  }
+
+  .sait h3{
+    color: #bfdeea; 
+    border-bottom: solid 2px #bfdeea;
+    font-size: 1.5rem;
+    margin: 10% 75px 10%;
+  }
+
+  .sait h4{
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 25%;
+    margin-bottom: 1%;
+  }
+
+  .sait p{
+    font-size: 1rem;
+    margin: 0;
+    padding: 2% 10%;
+  }      
+    
   .twitter {
     width: 50%;
     margin-top: 30%;
