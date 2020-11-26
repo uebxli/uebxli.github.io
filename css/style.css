@@ -840,6 +840,7 @@ p {
   }
 
   .sait p{
+    line-height: 150%;
     font-size: 1rem;
     margin: 0;
     padding: 2% 10%;
