@@ -287,7 +287,7 @@ main {
   text-align: center;
 }
 
-#uebxli p {
+.uebxli p {
   max-width: 80%;
   color: #222;
   font-size: 1.8rem;
@@ -316,6 +316,51 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   margin: 15px 75px;
+}
+
+.sait {
+    
+}
+
+.sait_link{
+    margin-bottom: 8%;
+}
+
+.sait h3{
+    color: #bfdeea; 
+    border-bottom: solid 2px #bfdeea;
+    font-size: 2.5rem;
+    margin: 10% 75px 10%;
+}
+
+.sait h4{
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 25%;
+    margin-bottom: 1%;
+}
+
+.sait a:link{
+    color: #bfdeea; 
+}
+
+.sait a:visited{
+    color: #bfdeea; 
+}
+
+.sait a:hover{
+    color: #bfdeea; 
+}
+
+.sait img{
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.sait p{
+    margin: 0;
+    padding: 2% 10%;
 }
 
 #plo {
